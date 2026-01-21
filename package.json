@@ -1,0 +1,41 @@
+{
+  "name": "project-flow-visualizer",
+  "displayName": "Project Flow Visualizer",
+  "description": "Visualize your project structure as an interactive flow graph",
+  "version": "1.0.0",
+  "publisher": "SakibAhmed",
+  "id": "b41ac335-aa3c-609c-985c-c5162235542a",
+  "engines": {
+    "vscode": "^1.108.1"
+  },
+  "categories": [
+    "Other",
+    "Visualization"
+  ],
+  "keywords": [
+    "project",
+    "visualizer",
+    "graph",
+    "tree",
+    "blueprint"
+  ],
+  "icon": "icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devvsakib/project-visualizer"
+  },
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "projectVisualizer.showGraph",
+        "title": "Show Project Graph"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "22.x",
+    "@types/vscode": "^1.108.1"
+  }
+}
