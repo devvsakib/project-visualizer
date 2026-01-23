@@ -3,7 +3,6 @@ name: Build VSIX
 on:
   push:
     branches: [ main ]
-  pull_request:
   workflow_dispatch:
 
 jobs:
@@ -11,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Setup Node.js
@@ -26,10 +25,10 @@ jobs:
       - name: Install vsce
         run: npm install -g @vscode/vsce
 
-      - name: Package extension
+      - name: Package VSIX
         env:
           VSCE_DISABLE_KEYTAR: "1"
-        run: vsce package
+        run: npx vsce package
 
       - name: Upload VSIX artifact
         uses: actions/upload-artifact@v4
