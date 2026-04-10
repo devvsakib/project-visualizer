@@ -3,6 +3,7 @@
   "displayName": "Project Flow Visualizer",
   "description": "Visualize your project structure as an interactive flow graph",
   "version": "1.0.2",
+  "license": "MIT",
   "publisher": "SakibAhmed",
   "id": "b41ac335-aa3c-609c-985c-c5162235542a",
   "engines": {
